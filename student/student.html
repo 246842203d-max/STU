@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>学籍通 · 我的信息</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>学籍通 · 我的学籍信息</h1>
+        <div class="user-meta">你好，<strong id="welcomeName">同学</strong></div>
+      </div>
+      <div class="topbar-actions">
+        <button id="logoutBtn" class="btn btn-ghost" type="button">退出登录</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="pageMsg" class="msg" role="alert"></div>
+      <section class="panel">
+        <div class="profile-grid">
+          <div class="profile-item">
+            <span class="label">学号</span>
+            <span class="value" id="v_student_no">-</span>
+          </div>
+          <div class="profile-item">
+            <span class="label">姓名</span>
+            <span class="value" id="v_name">-</span>
+          </div>
+          <div class="profile-item">
+            <span class="label">性别</span>
+            <span class="value" id="v_gender">-</span>
+          </div>
+          <div class="profile-item">
+            <span class="label">年龄</span>
+            <span class="value" id="v_age">-</span>
+          </div>
+          <div class="profile-item">
+            <span class="label">班级</span>
+            <span class="value" id="v_class">-</span>
+          </div>
+          <div class="profile-item">
+            <span class="label">专业</span>
+            <span class="value" id="v_major">-</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/student.js"></script>
+</body>
+</html>

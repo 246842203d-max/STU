@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>学籍通 · 学生注册</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card">
+      <h1 class="brand">学籍通</h1>
+      <p class="brand-sub">创建学生账号，注册后可用学号登录查看本人信息</p>
+
+      <div id="msg" class="msg" role="alert"></div>
+
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="student_no">学号</label>
+          <input id="student_no" required placeholder="例如 20240001" />
+        </div>
+        <div class="form-group">
+          <label for="name">姓名</label>
+          <input id="name" required placeholder="请输入真实姓名" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gender">性别</label>
+            <select id="gender">
+              <option value="">请选择</option>
+              <option value="男">男</option>
+              <option value="女">女</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="age">年龄</label>
+            <input id="age" type="number" min="1" max="120" placeholder="可选" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="class_name">班级</label>
+          <input id="class_name" placeholder="例如 软件2401" />
+        </div>
+        <div class="form-group">
+          <label for="major">专业</label>
+          <input id="major" placeholder="例如 软件工程" />
+        </div>
+        <div class="form-group">
+          <label for="password">密码</label>
+          <input id="password" type="password" required minlength="4" placeholder="至少 4 位" />
+        </div>
+        <div class="form-group">
+          <label for="confirm">确认密码</label>
+          <input id="confirm" type="password" required minlength="4" placeholder="再次输入密码" />
+        </div>
+        <button class="btn btn-primary" type="submit">注册</button>
+      </form>
+
+      <p class="auth-links">
+        已有账号？ <a href="/index.html">返回登录</a>
+      </p>
+    </section>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>
